@@ -1,0 +1,434 @@
+body{
+    font-weight: 700;
+    font-size: 22px;
+    font-family: "be vietnam";
+    overflow: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(pet.jpg);
+    background-size: cover;  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 55px 0;
+}
+
+li{
+    float: right;
+}
+
+li:nth-child(1){
+    float: left; 
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-bar{
+    grid-area: header;
+}
+
+.nav-bar-logo{
+  width: 50%;
+  margin-left: 20px;
+}
+
+
+.nav-bar-item{
+    text-align: center;
+    padding: 10px 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.nav-bar-item:not(:first-of-type){
+    background-color: #DB9428;
+    transition: transform .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#active{
+    background-color: black;
+}
+
+.nav-bar-item:not(:first-of-type):hover,#active:hover{
+    background-color: black;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+
+.grid {
+  display: grid;
+    grid-template-areas:
+    'header header'
+    'service-title about'
+    'services about'
+    'review-title review-title'
+    'review review'
+    'foot foot';
+}
+
+
+.Reviwes-title{
+    grid-area: review-title;
+    padding: 2px 30px;
+    margin-left: 10px;
+   border-radius: 20px;
+    margin-top: 30px;
+    text-align: center;
+   background-color: #304b4d;
+   font-size: 12px;
+   color: white;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    
+}
+
+.reviwe{
+    grid-area: review;
+}
+
+
+
+.grid-about-us {
+  width: 440px;/*440px*/
+  height: 620px;/*600px*/
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.4rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  grid-area: about;
+}
+
+.grid-about-us:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #DB9428;
+  margin-bottom: 1px;
+}
+
+.edit-about{
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px;
+    text-align: center;
+    padding: 10px 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-color: #DB9428;
+    transition: transform .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.edit-about:hover,.add-serv:hover{
+    background-color:#c2cffc;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card-content img{
+  width: 70%;
+}
+
+.card-text {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  color: #3d3d3d;
+  text-align: center;
+    margin: 15px;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  height: 40%;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #FFF;
+  background-color: #DB9428;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  position: static;
+  margin-top: -10px;
+  
+  
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+.service-title{
+   height: 70px;
+   width: 280px;
+   grid-area: service-title;
+   margin-bottom: 15px;
+   margin-left: 23rem;
+   padding: 2px 30px;
+   text-align: center;
+   border-radius: 10px;
+   background-color: #9C4E5B;
+   font-size: 13px;
+   color: white;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.service-title:not(:first-of-type):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.add-serv{
+    height: 30px;
+    width: 130px;
+    float: right;
+    padding: 2px 30px;
+    padding-top:6px; 
+    font-size: 20px;
+    font-weight: bold;
+    grid-area: service-title;
+    text-align: center;
+    margin: 35px;
+    margin-left: 83px;
+    border-radius: 10px;
+    background-color: #9C4E5B ;
+    transition: transform .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.services {
+  grid-area: services;
+  display: grid;
+  width: 83.4%;
+  grid-template-columns: 250px 250px 250px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  grid-template-areas: "serv1 serv2 serv3";
+  margin: 30px;
+  margin-left: 80px;
+}
+
+
+.serv{
+  background-color: white;
+  display: grid;
+  grid-template-rows: 180px 190px 85px;
+  grid-column-gap: 50px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.serv:hover{
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+
+.card-image{
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+
+.card-text1{
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text1 p{
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+  
+}
+.card-text1 h2{
+  margin-top:0px;
+  font-size:28px;
+}
+
+.card-stats{
+  grid-area: stats; 
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #9C4E5B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding:10px;
+}
+
+footer{
+    margin-top: 20px;
+    padding-top: 20px;
+    grid-area: foot;
+    clear: both; 
+    background-color: #304b4d;
+    text-align: center; 
+    color: #fff;
+    font-size: medium; 
+    font-family: 'Courier New', Courier, monospace; 
+    height: 100px;}
+
+
+
+/* test*/
+
+
+section{
+  position: relative;  
+  height: 300px;
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+.swiper{
+  width: 70%;
+  
+}
+
+.cardR{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardR::before{
+  content: "";
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  background:  #304b4d;
+  border-radius: 20px 20px 0 0;
+}
+
+.Rnote{
+    font-size: 12px;
+}
+
+.line{
+    color: #DB9428;
+    margin-top: -5px;
+}
+
+
+.cardR .card-contentR{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 100;
+}
+
+section .cardR .image{
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  padding: 3px;
+  background:  #304b4d;
+}
+
+section .cardR .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+
+
+.cardR .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+} 
+
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession{
+  font-size:15px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: #DB9428;
+}
+
+.cardR .rating{
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+}
+
+
+.swiper-pagination{
+  position: absolute;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #304b4d;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #304b4d;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #304b4d;
+}

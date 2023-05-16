@@ -1,0 +1,130 @@
+
+.header ul{
+list-style-type: none;
+    padding: 0;
+    margin: 30px 55px 0;
+}
+
+li{
+    float: right;
+}
+
+li:nth-child(1){
+    float: left; 
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+  width: 50%;
+  margin-left: 20px;
+}
+
+.header-item{
+    text-align: center;
+    padding: 10px 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: #DB9428;
+    transition: transform .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.header-item:hover{
+    background-color: black;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    width:100% ;
+    height: 100vh;
+    font-family:"be vietnam";
+    background-image:url(./pet.jpg) ;
+    background-size: cover;
+    background-attachment:fixed;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.P-box{
+    background:#b86a767e;
+    text-align: center;
+    padding: 50px 130px;
+    position:relative;
+    border-radius: 80px;
+    font-size: 20px;
+    color: #486f72;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+}
+
+.P-pic{
+    width: 150px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-bottom: 20px;
+    align-items: center;
+   
+}
+
+.information .data{
+    margin-bottom: 20px;
+}
+
+h4{
+    text-decoration: underline;
+    font-weight: bolder;
+
+}
+h2{
+    margin-bottom: 40px;
+    color:#74323c ;
+}
+
+.data li{
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.button{
+    background-color:#DB9428 ;
+    outline: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor:pointer;
+    font-size: 20px;
+    font-family:monospace ;
+    text-align: center;
+    text-decoration:none ;
+    outline: none;
+    color:#fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+
+}
+.button:hover,
+.button:active
+{
+    background-color:#fff;
+    color: #DB9428;
+}

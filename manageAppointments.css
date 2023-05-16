@@ -1,0 +1,211 @@
+body{
+    font-weight: 700;
+    font-size: 22px;
+    font-family: "be vietnam";
+    overflow: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(pet.jpg);
+    background-size: cover;
+    
+}
+
+.appointments-container {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'nav'
+    'request-list'
+    'upcoming-appointments'
+    'previous-appointments'
+    'footer';
+    grid-row-gap: 20px;
+    
+}
+button{
+    background-color: transparent;
+}
+
+/*header*/
+
+.header{
+    grid-area: header;
+}
+
+ul{
+list-style-type: none;
+    padding: 0;
+    margin: 30px 55px 0;
+}
+
+li{
+    float: right;
+}
+
+li:nth-child(1){
+    float: left; 
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+  width: 50%;
+  margin-left: 20px;
+}
+
+.header-item{
+    text-align: center;
+    padding: 10px 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: #DB9428;
+    transition: transform .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.header-item:hover{
+    background-color: black;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+
+/*nav*/
+
+.nav{
+    grid-area: nav;
+}
+
+nav ul li{
+    float: none;
+}
+
+.nav-item{
+    text-align: center;
+    padding: 10px 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: rgb(72, 112, 114);
+    transition: transform .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.nav-item:hover{
+    background-color: #9C4E5B;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+/*all*/
+
+fieldset{
+   border-radius: 10px;
+   border-width: thick; 
+   background-color: rgba(255, 255, 255, 0.9); 
+   height: 390px;/*change it according to card hight*/ 
+   overflow-y: auto;
+}
+
+legend{
+    color: white;
+    background-color: rgba(72, 112, 114,1);
+    padding: 10px 30px;
+    padding-top: 5px;
+    border-radius: 10px;
+    
+}
+
+legend:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.appion-card{
+    display: inline-block;
+    height: 330px;
+    width: 20%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    /*background-color: rgb(156,78,91);*/
+    padding-left: 25px;
+    cursor: pointer;
+    transition: transform .3s;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color:  rgba(72, 112, 114,0.9);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.appion-card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.appion-card a:not(.anchor-profile){
+    border-radius: 5px;
+    color: rgb(72, 112, 114);
+    background-color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.appion-card .anchor-profile{
+    float: right;
+    margin-right: 30px;
+    text-decoration: underline;
+    color: white;
+    font-style: italic;
+}
+
+.appion-card .anchor-profile:hover{
+    color: #9C4E5B;
+}
+
+.appion-card a:not(.anchor-profile):hover{
+    background-color: #9C4E5B;
+    color: white;
+}
+
+
+/*requst list*/
+
+#request-list{
+    grid-area: request-list;
+}
+
+
+
+/*upcoming appointments*/
+
+#upcoming-appointments{
+    grid-area: upcoming-appointments;
+}
+
+
+/*previous-appointments*/
+
+#previous-appointments{
+    grid-area: previous-appointments;
+}
+
+.checked{
+    color: orange;
+}
+
+h5{
+    color: orange;
+    margin-bottom: 0px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 100%;
+}
